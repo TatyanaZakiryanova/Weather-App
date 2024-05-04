@@ -10,7 +10,7 @@ Link: https://currentweatherdata.netlify.app/
 
 ## Preview
 
-<img src='./src/assets/weatherapppreview.png' alt="preview">
+<img src="./src/assets/weatherapppreview.png" alt="preview">
 
 ## How to start project
 
