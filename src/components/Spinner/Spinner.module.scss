@@ -1,33 +1,33 @@
 .loading {
-    height: 400px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .loadingicon {
-      font-size: 3rem;
-      animation: spin 2s linear infinite;
-    }
-    p {
-      margin-top: 10px;
-    }
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .loadingicon {
+    font-size: 3rem;
+    animation: spin 2s linear infinite;
   }
-  
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  p {
+    margin-top: 10px;
   }
-  
-  @-webkit-keyframes spin {
-    from {
-      -webkit-transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-    }
- }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}

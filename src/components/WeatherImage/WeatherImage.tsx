@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { IoMdPartlySunny, IoMdRainy } from 'react-icons/io';
-import { MdSunny, MdCloud, MdFoggy } from 'react-icons/md';
+import { MdCloud, MdFoggy,MdSunny } from 'react-icons/md';
 
 export const WeatherImage = (weather: string) => {
   let imageElement: ReactNode;

@@ -1,6 +1,7 @@
 import axios from 'axios';
-import { WeatherCityFunction } from '../../components/WeatherData/types';
+
 import { apiEndpoint, apiKey } from '../../components/WeatherData/api';
+import { WeatherCityFunction } from '../../components/WeatherData/types';
 
 const fetchWeatherDataCity: WeatherCityFunction = async (city) => {
   try {

@@ -1,6 +1,6 @@
+import { apiEndpoint, apiKey } from '../../components/WeatherData/api';
 import mockedAxios from '../../mocks/mockAxios';
 import mockWeatherData from '../../mocks/mockWeatherData';
-import { apiEndpoint, apiKey } from '../../components/WeatherData/api';
 import fetchWeatherDataCity from './WeatherCity';
 
 beforeEach(() => {

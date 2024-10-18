@@ -1,5 +1,6 @@
-import styles from './NotFound.module.scss';
 import { PiWarningCircleLight } from 'react-icons/pi';
+
+import styles from './NotFound.module.scss';
 
 const NotFound = () => {
   return (

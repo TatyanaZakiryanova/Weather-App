@@ -1,9 +1,10 @@
-import { IWeatherData } from '../WeatherData/types';
-import styles from './WeatherDisplay.module.scss';
-import { WeatherImage } from '../WeatherImage/WeatherImage';
 import { FaWind } from 'react-icons/fa';
-import { MdWaterDrop } from 'react-icons/md';
 import { FiBarChart } from 'react-icons/fi';
+import { MdWaterDrop } from 'react-icons/md';
+
+import { IWeatherData } from '../WeatherData/types';
+import { WeatherImage } from '../WeatherImage/WeatherImage';
+import styles from './WeatherDisplay.module.scss';
 
 const WeatherDisplay = ({ weatherData }: { weatherData: IWeatherData }) => {
   return (

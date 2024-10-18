@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
-import { HandleSearchFunction, IWeatherData } from './types';
-import CitySearch from '../CitySearch/CitySearch';
-import WeatherDisplay from '../WeatherDisplay/WeatherDisplay';
-import styles from './WeatherData.module.scss';
-import Spinner from '../Spinner/Spinner';
-import NotFound from '../NotFound/NotFound';
-import { fetchWeatherByCoords } from '../../utils/WeatherCoords/WeatherCoords';
+
 import fetchWeatherDataCity from '../../utils/WeatherCity/WeatherCity';
+import { fetchWeatherByCoords } from '../../utils/WeatherCoords/WeatherCoords';
+import CitySearch from '../CitySearch/CitySearch';
+import NotFound from '../NotFound/NotFound';
+import Spinner from '../Spinner/Spinner';
+import WeatherDisplay from '../WeatherDisplay/WeatherDisplay';
+import { HandleSearchFunction, IWeatherData } from './types';
+import styles from './WeatherData.module.scss';
 
 const WeatherData = () => {
   const [weatherData, setWeatherData] = useState<IWeatherData | null>(null);

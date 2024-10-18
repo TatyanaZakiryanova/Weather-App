@@ -1,22 +1,24 @@
 import { KeyboardEventHandler, useState } from 'react';
-import { HandleSearchFunction } from '../WeatherData/types';
-import styles from './CitySearch.module.scss';
 import { IoSearchCircleSharp } from 'react-icons/io5';
 
-const CitySearch = ({ onSearch }: { onSearch: HandleSearchFunction }) => {
+import styles from './CitySearch.module.scss';
+
+interface CitySearchProps {
+  onSearch: (searchCity: string) => void;
+}
+
+const CitySearch: React.FC<CitySearchProps> = ({ onSearch }) => {
   const [searchCity, setSearchCity] = useState<string>('');
   const [isFocused, setIsFocused] = useState(false);
 
-  const handleFocus = () => {
-    setIsFocused(true);
-  };
-
-  const handleBlur = () => {
-    setIsFocused(false);
+  const handleFocusBlur = (focused: boolean) => {
+    setIsFocused(focused);
   };
 
   const handleSearch = () => {
-    onSearch(searchCity);
+    if (searchCity.trim()) {
+      onSearch(searchCity);
+    }
   };
 
   const handleSearchKey: KeyboardEventHandler<HTMLInputElement> = (e) => {
@@ -32,8 +34,8 @@ const CitySearch = ({ onSearch }: { onSearch: HandleSearchFunction }) => {
         value={searchCity}
         onChange={(e) => setSearchCity(e.target.value)}
         onKeyUp={handleSearchKey}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
+        onFocus={() => handleFocusBlur(true)}
+        onBlur={() => handleFocusBlur(false)}
         placeholder={isFocused ? '' : 'Enter your city...'}
       />
       <button onClick={handleSearch}>

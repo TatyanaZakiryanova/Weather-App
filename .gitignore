@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+jest.config.cjs
+jest.setup.ts
+tsconfig.jest.json
+

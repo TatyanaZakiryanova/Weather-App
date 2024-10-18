@@ -2,9 +2,9 @@
 
 Приложение погоды.
 
-<img src="./src/assets/weatherapp-preview.png" alt="preview">
-
 [Deploy](https://currentweatherdata.netlify.app/)
+
+<img src="./src/assets/weatherapp-preview.png" alt="preview">
 
 ## Technologies Used
 
@@ -30,7 +30,7 @@
 
 ### Styling and Responsiveness
 
-- Адаптивная вёрстка до 375px ширины экрана (SCSS модули)
+- Адаптивная вёрстка до 360px ширины экрана (SCSS модули)
 - React-icons для визуализации погоды
 
 ### Testing
@@ -60,5 +60,5 @@ npm run build
 production mode:
 
 ```js
-npm run serve
+npm run preview
 ```

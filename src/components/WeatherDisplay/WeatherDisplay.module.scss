@@ -1,47 +1,51 @@
 .weather {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 30px 0;
-    text-align: center;
-    h1 {
-      font-size: 2.5rem;
-    }
-    .image {
-      font-size: 8rem;
-      margin-bottom: -20px;
-      transition: transform 0.2s, opacity 0.2s;
-      &:hover {
-        transform: scale(1.1);
-        opacity: 1;
-      }
-    }
-   span {
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-size: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px 0;
+  text-align: center;
+  h1 {
+    font-size: 2.5rem;
+  }
+  .image {
+    font-size: 8rem;
+    margin-bottom: -20px;
+    transition:
+      transform 0.2s,
+      opacity 0.2s;
+    &:hover {
+      transform: scale(1.1);
+      opacity: 1;
     }
   }
-  .inform {
-    display: flex;
-    text-align: center;
-    .humidity,
-    .wind,
-    .pressure {
-      padding: 0 15px;
+  span {
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+.inform {
+  display: flex;
+  text-align: center;
+  .humidity,
+  .wind,
+  .pressure {
+    padding: 0 15px;
+  }
+  .humidityicon,
+  .windicon,
+  .pressureicon {
+    font-size: 2rem;
+    color: #37618b;
+    opacity: 0.8;
+    transition:
+      transform 0.2s,
+      opacity 0.2s;
+    &:hover {
+      transform: scale(1.1);
+      opacity: 1;
     }
-    .humidityicon,
-    .windicon,
-    .pressureicon {
-      font-size: 2rem;
-      color: #37618b;
-      opacity: 0.8;
-      transition: transform 0.2s, opacity 0.2s;
-      &:hover {
-        transform: scale(1.1);
-        opacity: 1;
-      }
-    }
+  }
 }

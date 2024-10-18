@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import WeatherDisplay from './WeatherDisplay';
+
 import mockWeatherData from '../../mocks/mockWeatherData';
+import WeatherDisplay from './WeatherDisplay';
 
 describe('WeatherDisplay', () => {
   test('renders weather data correctly', () => {
